@@ -1,0 +1,8 @@
+# 运行本程序不需要任何第三方库（tkinter 为 Python 标准库自带）。
+# 本文件仅记录「打包/发版」所需的工具：
+#
+#   pip install -r requirements.txt
+#
+pyinstaller>=6.0        # 打包 exe（配置见 FileVerifyRename.spec）
+# Inno Setup 6 为独立安装的 Windows 软件，不在 pip 管理范围内：
+# https://jrsoftware.org/isdl.php

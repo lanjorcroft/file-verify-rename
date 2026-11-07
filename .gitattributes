@@ -1,0 +1,13 @@
+# 统一换行符，避免 Windows 脚本被检出成 LF 后无法执行
+* text=auto eol=lf
+
+# cmd 批处理必须是 CRLF，否则命令会被截断（详见 操作日志.md 2026-11-07 踩坑记录）
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.iss  text eol=crlf
+
+# 二进制资源不做换行符转换
+*.ico  binary
+*.gif  binary
+*.png  binary
+*.exe  binary
